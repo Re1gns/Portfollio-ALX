@@ -1,6 +1,5 @@
 from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
-from django.http import HttpResponse
 from .models import Post, Comment, UserProfile
 
 # Create your views here.
@@ -16,7 +15,7 @@ def about_us(request):
 
 def post_list(request):
     author = "admin"
-    posts = Post.objects.all()
+    posts = Post.objects.all().order_by('-created_at')
     context = {"posts": posts, "author": author}
     return render(request, "blog/post_list.html", context=context)
 
