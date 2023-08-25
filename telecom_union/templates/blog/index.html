@@ -1,0 +1,31 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello</title>
+</head>
+<body>
+    <br></br>
+    <h4>Image here with some text</h4>
+    <a href="/membership" class="btn btn-primary">Join Now! &rarr;</a>
+
+    <hr>
+    <h4>Some News and Updates</h4>
+        <div class="post">
+            {% for post in featured_posts %}
+            <h2>{{ post.title }}</h2>
+            <p class="card-text text-muted h6">{{ author }} | {{ post.created_at}} </p>
+            <p class="card-text">{{post.content|slice:":200" }}</p>
+            <a href="{% url 'post_detail' post.slug %}" class="btn btn-link">Continue Reading &rarr;</a>
+            <hr>
+            {% endfor %}
+        </div>
+</body>
+</html>
+
+{% endblock %}
