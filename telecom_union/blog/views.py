@@ -20,19 +20,27 @@ def contact_us(request):
 def membership(request):
     if request.user.is_authenticated:
         user_profile, created = UserProfile.objects.get_or_create(user=request.user)
-        
+
         if request.method == 'POST':
             action = request.POST.get('action')
-            
+
             if action == 'join':
+                if user_profile.is_member:
+                    messages.info(request, 'You\'re already a member!')
+                    return redirect('membership')
+
                 user_profile.is_member = True
                 user_profile.save()
-                messages.success(request, 'You\'re now a member!')
+                messages.success(request, 'You\'ve become a member. Congratulations!')
                 return redirect('membership')
-            
+
         return render(request, 'blog/membership.html')
     else:
-        messages.info(request, 'You\'re not logged in')
+        if request.method == 'POST':
+            action = request.POST.get('action')
+
+            if action == 'join':
+                messages.info(request, 'Please log in first to become a member')
         return render(request, 'blog/membership.html')
 
 def post_list(request):
