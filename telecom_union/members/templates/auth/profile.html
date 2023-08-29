@@ -1,0 +1,24 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+</head>
+<body>
+    {% if user.is_authenticated %}
+    <li class="nav-item">
+      {{ profile }}
+    </li>
+    {% else %}
+    <li class="nav-item">
+      <h3> You're Not Logged In!</h3>
+    </li>
+    {% endif %}
+</body>
+</html>
+{% endblock %}
