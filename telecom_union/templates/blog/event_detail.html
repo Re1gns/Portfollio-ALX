@@ -1,0 +1,16 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    <h1 class="title">{{ event.title|safe }}</h1>
+
+    <small class="card-text text-muted h6">Event Date: {{ event.event_date }}</small>
+    <hr>
+    <a href="#" class="btn btn-info">Click Here to Join the Event</a>
+<br></br>
+    <p>{{ event.content|safe }}</p>
+
+    <hr>
+
+    <br>
+
+{% endblock %}
