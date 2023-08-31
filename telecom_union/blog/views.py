@@ -140,6 +140,9 @@ def join(request):
             else:
                 messages.warning(request, 'You\'re already a member!')
                 return redirect('join')  # Redirect back to the join page
+        else:
+            messages.warning(request, 'Please enter a valid email address!')
+            return redirect('join')
     else:
         form = JoinForm()
         return render(request, 'blog/join.html', {'form': form})
