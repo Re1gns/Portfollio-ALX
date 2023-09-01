@@ -19,7 +19,7 @@
         <div class="alert alert-success" role="alert">
           You're a beloved Member of Our Union!
         </div>
-        <a href="{% url 'membership' %}" class="btn btn-outline-danger">Cancel Membership?</a>
+        <a id="cancel_membership" href="{% url 'cancel_membership' %}" class="btn btn-outline-danger">Cancel Membership?</a>
       {% else %}
         <div class="alert alert-danger" role="alert">
           You're not a Member of Our Union yet!
