@@ -4,7 +4,8 @@ from django.contrib import messages
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
 from .forms import RegisterUserForm
-from blog.models import UserProfile
+from blog.models import UserProfile, JoinApplication
+from django.urls import reverse
 
 def login_user(request):
 	if request.method == "POST":
@@ -55,3 +56,20 @@ def user_profile(request, user_id):
         return render(request, 'auth/profile.html', {
             "profile": profile, "is_member": is_member,
         })  # temp view
+    
+def cancel_membership(request):
+    if request.user.is_authenticated:
+        user_profile, created = UserProfile.objects.get_or_create(user=request.user)
+        if user_profile.is_member:
+            user_profile.is_member = False
+            user_profile.save()
+
+            # Delete the user's JoinApplication
+            JoinApplication.objects.filter(user=request.user).delete()
+
+            messages.success(request, "You've canceled your membership successfully")
+            user_id = request.user.id  # Get the user id
+            profile_url = reverse('profile', args=[user_id])
+            return redirect(profile_url)  # Redirect back to the user's profile page
+
+    return redirect('login')
