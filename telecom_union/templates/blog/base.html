@@ -33,8 +33,8 @@
       <div class="container-fluid">
         <div>
           <ul class="navbar-nav">
-            <a class="navbar-brand" href="/" style="color: #94e689">
-              <img src="{% static 'images/logo.png' %}" alt="" width="30" height="24"> update v4
+            <a class="navbar-brand" href="/" style="color: #f5c256">
+              <img src="{% static 'images/logo.png' %}" alt="" width="30" height="24"> beta v5
             </a>
             <!-- <a class="navbar-brand" href="/" style="color: #aedfff">TradeUnion</a> -->
             <li class="nav-item">
@@ -60,6 +60,7 @@
         <div>
           <ul class="navbar-nav">
             {% if user.is_authenticated %}
+            <span class="navbar-text">Logged in as <a href="/members/profile/{{user.id}}">{{user.username}}</a> | </span>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <img src="/media/images/profile.png" alt="image" class="img-responsive" width="30px" height="30px">
