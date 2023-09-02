@@ -88,67 +88,72 @@
       </div>
     </nav>
     <div class="container">{% block content %} {% endblock %}</div>
-    <footer class="footer container" style=" bottom: 0; position: relative; margin-top: 40px; margin-bottom: 30px; flex-wrap: wrap;">
-      <a class="" href="/" style="color: #f5c256">
-        <img src="{% static 'images/logo.png' %}" alt="" width="30" height="24"> beta v5
-      </a>
-     
-      <div class="links">
-        
-        <ul>
-          <h3 style="font-size: 20px;">Links</h3>
-          <li class="footer-item">
-            <a class="footer-link" href="/home" style="color: rgb(32, 30, 30);">Home</a>
-          </li>
-          <li class="footer-item">
-            <a class="footer-link" href="/about-us" style="color: rgb(32, 30, 30); ">About Us</a>
-          </li>
-          <li class="footer-item">
-            <a class="footer-link" href="/membership" style="color: rgb(32, 30, 30); ">Membership</a>
-          </li>
-          <li class="footer-item">
-            <a class="footer-link" href="/news" style="color: rgb(32, 30, 30); ">News and Updates</a>
-          </li>
-          <li class="footer-item">
-            <a class="footer-link" href="/events" style="color: rgb(32, 30, 30); ">Our Events</a>
-          </li>
-          <li class="footer-item">
-            <a class="footer-link" href="/contact-us" style="color: rgb(32, 30, 30); ">Contact Us</a>
-          </li>
-        </ul>
-      </div>
-      <div class="menbership">
+    <div class="footer container" style=" bottom: 0; position: relative; display: flex; flex-direction: column;">
+      
+      <div style="margin-top: 40px; margin-bottom: 30px;display: flex; justify-content: space-between;">
+        <a class="" href="/" style="color: #f5c256">
+          <img src="{% static 'images/logo.png' %}" alt="" width="30" height="24"> beta v5
+        </a>
        
-        <ul style="text-align: left;">
-          <h3 style="font-size: 20px;">Good to know</h3>
-          <li>Why join us</li>
-          <li>How to join</li>
-          <li>Contact us</li>
-            
-        </ul>
-      </div>
-      <div class="social">
-       
-        <ul>
-          <h3 style="font-size: 20px;">Follow Us</h3>
+        <div class="links">
+          
+          <ul>
+            <h3 style="font-size: 20px;">Links</h3>
+            <li class="footer-item">
+              <a class="footer-link" href="/home" style="color: rgb(32, 30, 30);">Home</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="/about-us" style="color: rgb(32, 30, 30); ">About Us</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="/membership" style="color: rgb(32, 30, 30); ">Membership</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="/news" style="color: rgb(32, 30, 30); ">News and Updates</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="/events" style="color: rgb(32, 30, 30); ">Our Events</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="/contact-us" style="color: rgb(32, 30, 30); ">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="menbership">
          
-          <i class="fa fa-twitter" style="font-size:24px;color:#0d6efd; cursor: pointer; margin: 0 7px; ">
-            <a href="#"></a>
-          </i>
-          <i class="fa fa-linkedin" style="font-size:24px;color:#0d6efd; cursor: pointer; margin: 0 7px; ">
-            <a href="#"></a>
-          </i>
-          <i class="fa fa-facebook" style="font-size:24px;color:#0d6efd; cursor: pointer; margin: 0 7px; ">
-            <a href="#"></a>
-          </i>
+          <ul style="text-align: left;">
+            <h3 style="font-size: 20px;">Good to know</h3>
+            <li>Why join us</li>
+            <li>How to join</li>
+            <li>Contact us</li>
+              
+          </ul>
+        </div>
+        <div class="social">
          
-        </ul>
+          <ul>
+            <h3 style="font-size: 20px;">Follow Us</h3>
+           
+            <i class="fa fa-twitter" style="font-size:24px;color:#0d6efd; cursor: pointer; margin: 0 7px; ">
+              <a href="#"></a>
+            </i>
+            <i class="fa fa-linkedin" style="font-size:24px;color:#0d6efd; cursor: pointer; margin: 0 7px; ">
+              <a href="#"></a>
+            </i>
+            <i class="fa fa-facebook" style="font-size:24px;color:#0d6efd; cursor: pointer; margin: 0 7px; ">
+              <a href="#"></a>
+            </i>
+           
+          </ul>
+        </div>
       </div>
-    </footer>
-    <hr>
-    <div class="copyright" style="text-align: center; margin: 0 -144px 0 -200px;">
-      <p>@copyright 2023 TU</p>
+      
+      <hr>
+      <div class="copyright" style="text-align: center; margin: 0 -144px 0 -200px;">
+        <p>@copyright 2023 TU</p>
+      </div>
     </div>
+    
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
