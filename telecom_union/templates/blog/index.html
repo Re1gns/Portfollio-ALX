@@ -21,16 +21,16 @@
                     <p style="color: rgb(60, 60, 60);"> We are one big family and we care about your growth and well being</p>
                 </div>
                 <div class="join-link">
-                    <a href="/membership" class="btn btn-primary">Join Now! &rarr;</a>
+                    <a href="/membership" class="btn btn-primary">Join Now!</a>
                 </div>  
             </div>
             <div class="landing-image" style="  margin-top: 40px; ">
-             <img style=" z-index: -1;width: 730px; rotate: -9deg;" src="{% static 'images/pic2.png' %}" alt="an image here">
+             <img style=" z-index: -1;width: 730px; rotate: -9deg;" src="{% static 'images/header2.png' %}" alt="an image here">
             </div>
         </div>
     </main>
 
-    <h1 style="padding: 40px 0;">Highlights</h1>
+    <h1 style="padding: 40px 0;">News <span style="color: #94d2fe;">&</span> Updates</h1>
     <div class="row mb-2">
         {% for post in featured_posts %}
         <div class="col-md-6">
@@ -49,6 +49,49 @@
         </div>
         {% endfor %}
     </div>
+
+    <!-- START THE HIGHLIGHTS & SERVICES -->
+
+    <hr class="featurette-divider">
+    <h1 style="padding: 40px 0;">Highlights <span style="color: #94d2fe;">&</span> Services</h1>
+
+    <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Representing <span style="color:#0d6efd">Telecommunication</span> Workers. <span class="text-muted">Empowering the Industry.</span></h2>
+          <p class="lead">At Telecommunication Trade Union, we are dedicated to representing the interests of telecommunication workers. Our mission is to empower the industry and ensure fair treatment for all workers.</p>
+        </div>
+        <div class="col-md-5">
+          <img src="{% static 'images/representation.png' %}" alt="Representing Workers" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto">
+        </div>
+      </div>
+      
+      <hr class="featurette-divider">
+      
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading">Advocating for <span style="color:#0d6efd">Fair Labor</span> Practices. <span class="text-muted">Your Rights, Our Priority.</span></h2>
+          <p class="lead">We are committed to advocating for fair labor practices within the telecommunication industry. Our team works tirelessly to ensure that your rights and well-being are our top priority.</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <img src="{% static 'images/advocating.png' %}" alt="Fair Labor Practices" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto">
+        </div>
+      </div>
+      
+      <hr class="featurette-divider">
+      
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Educating and <span style="color:#0d6efd">Empowering</span> Members. <span class="text-muted">Knowledge is Power.</span></h2>
+          <p class="lead">Telecommunication Trade Union offers educational programs and resources to empower our members. We believe that knowledge is power, and we are here to support your growth and development.</p>
+        </div>
+        <div class="col-md-5">
+          <img src="{% static 'images/educating.png' %}" alt="Education and Empowerment" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto">
+        </div>
+      </div>
+      
+      <hr class="featurette-divider">
+
+    <!-- /END THE HIGHLIGHTS & SERVICES -->
     
 </body>
 </html>
