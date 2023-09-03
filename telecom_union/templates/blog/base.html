@@ -21,6 +21,7 @@
   <body>
     <br/>
     <div class="container">
+    <div class="container" style="z-index: 100; color: black; top: 0; position: fixed;  margin: 0 0 20px 0;">
       {% if messages %}
       {% for message in messages %}
         <div class="alert alert-{{ message.tags }}" role="alert">
@@ -28,9 +29,7 @@
           <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
       {% endfor %}
-    {% endif %}
-
-    <div class="container" style="z-index: 100; color: black; top: 0; position: fixed;  margin: 0 0 20px 0;">
+      {% endif %}
       <nav class="navbar navbar-expand-lg navbar-light bg-light rounded shadow" aria-label="Eleventh navbar example">
       <!-- DARK NAVBAR COMMENTED OUT -->
       <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded shadow" aria-label="Eleventh navbar example"> -->
