@@ -30,6 +30,54 @@ li a:hover{
     
  }
  h3{
-    font-size: 10px;
+    /* font-size: 10px; */
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
     text-align: left;
  }
+  
+  .display-4 {
+    font-size: 2.5rem;
+  }
+  @media (min-width: 768px) {
+    .display-4 {
+      font-size: 3rem;
+    }
+  }
+  
+  .nav-scroller {
+    position: relative;
+    z-index: 2;
+    height: 2.75rem;
+    overflow-y: hidden;
+  }
+  
+  .nav-scroller .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .nav-scroller .nav-link {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    font-size: .875rem;
+  }
+  
+  .card-img-right {
+    height: 100%;
+    border-radius: 0 3px 3px 0;
+  }
+  
+  .flex-auto {
+    flex: 0 0 auto;
+  }
+  
+  .h-250 { height: 250px; }
+  @media (min-width: 768px) {
+    .h-md-250 { height: 250px; }
+  }
