@@ -17,11 +17,11 @@ Functionalities
 Table of content
 ====================
 
-* Environmenst
-* Installation
-* File description
-* Bugs
-* Authors
+* `Environmenst`
+* `Installation`
+* `File description`
+* `Bugs`
+* `Authors`
 
 Environment
 ==============
