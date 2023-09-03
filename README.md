@@ -42,15 +42,15 @@ Installation
 * Open the folder in your local machine 
 * Open the project directory in an integrated terminal
 
-![Opening an intergrated terminal](telecom_union\static\images\01.jpg)
+<!-- ![Opening an intergrated terminal](telecom_union\static\images\01.jpg) -->
 <img src='telecom_union\static\images\01.jpg' alt='intergrated terminal'>
 
 * Install the requirements using `pip install -r requirements.txt`
 
-![Installing requirments](telecom_union\static\images\02.jpg)
+<img src='telecom_union\static\images\02.jpg' alt='Installing requirments'>
 * Run the server and open the local host link `http://127.0.0.1:8000/` in your browser
 
-![running the project](telecom_union\static\images\03.jpg)
+<img src='telecom_union\static\images\03.jpg' alt='running the project'>
 
 ### Things to take into consderation
 * Make sure you have python and pip installed in your machine
