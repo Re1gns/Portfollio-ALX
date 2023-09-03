@@ -30,63 +30,70 @@
       {% endfor %}
     {% endif %}
 
-    <nav class="navbar container navbar-expand-lg navbar-dark bg-white nav shadow " style="z-index: 100; color: black; top: 0; position: fixed;  margin: 0 0 20px 0; ">
-      <div class="container-fluid" style="color: black;">
-        <div>
-          <ul class="navbar-nav">
-            <a class="navbar-brand" href="/" style="color: #f5c256">
-              <img src="{% static 'images/logo.png' %}" alt="" width="30" height="24"> beta v5
-            </a>
-            <!-- <a class="navbar-brand" href="/" style="color: #aedfff">TradeUnion</a> -->
-            <li class="nav-item">
-              <a class="nav-link" href="/home" style="color: rgb(32, 30, 30);">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/about-us" style="color: rgb(32, 30, 30); ">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/membership" style="color: rgb(32, 30, 30); ">Membership</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/news" style="color: rgb(32, 30, 30); ">News and Updates</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/events" style="color: rgb(32, 30, 30); ">Our Events</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/contact-us" style="color: rgb(32, 30, 30); ">Contact Us</a>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <ul class="navbar-nav">
-            {% if user.is_authenticated %}
-            <span class="navbar-text" style="color: rgb(32, 30, 30);">Logged in as <a href="/members/profile/{{user.id}}" style="color: blue;">{{user.username}}</a> | </span>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: rgb(32, 30, 30);">
-                <img src="/media/images/profile.png" alt="image" class="img-responsive" width="30px" height="30px">
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="/members/profile/{{user.id}}">My Profile</a></li>
-                <li><a class="dropdown-item" href="#">Settings</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="/members/logout">Logout</a></li>
+    <div class="container" style="z-index: 100; color: black; top: 0; position: fixed;  margin: 0 0 20px 0;">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light rounded shadow" aria-label="Eleventh navbar example">
+      <!-- DARK NAVBAR COMMENTED OUT -->
+      <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded shadow" aria-label="Eleventh navbar example"> -->
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/" style="color:#0d6efd;">TradeUnion</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse" id="navbarsExample09">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about-us">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/membership">Membership</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/news">News and Updates</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/events">Our Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact-us">Contact Us</a>
+              </li>
+            </ul>
+            <div>
+              <ul class="navbar-nav">
+                {% if user.is_authenticated %}
+                <span class="navbar-text">Logged in as <a href="/members/profile/{{user.id}}">{{user.username}}</a> | </span>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="/media/images/profile.png" alt="image" class="img-responsive" width="30px" height="30px">
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="/members/profile/{{user.id}}">My Profile</a></li>
+                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="/members/logout">Logout</a></li>
+                  </ul>
+                </li>
+                <!-- <span class="navbar-text">Logged in as <a href="/members/profile/{{user.id}}">{{user.username}}</a> | </span>
+                <li class="nav-item">
+                  <a class="nav-link" href="/members/logout">Logout</a>
+                </li> -->
+                {% else %}
+                <li class="nav-item">
+                  <a class="nav-link" href="/members/login">Login</a>
+                </li>
+              </div>
+                {% endif %}
               </ul>
-            </li>
-            <!-- <span class="navbar-text">Logged in as <a href="/members/profile/{{user.id}}">{{user.username}}</a> | </span>
-            <li class="nav-item">
-              <a class="nav-link" href="/members/logout">Logout</a>
-            </li> -->
-            {% else %}
-            <li class="nav-item">
-              <a class="nav-link" href="/members/login" style="color: rgb(32, 30, 30);">Login</a>
-            </li>
+            </div>
           </div>
-            {% endif %}
-          </ul>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
+
     <div class="container">{% block content %} {% endblock %}</div>
     <div class="footer container" style=" bottom: 0; position: relative; display: flex; flex-direction: column;">
       
