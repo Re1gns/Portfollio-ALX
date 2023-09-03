@@ -65,16 +65,16 @@ Installation
 
 File description
 ================
-## Blog
-## Media/images
-## Members
-## Static
-## Telecom_union
-## Templates
-## db.sqlite3
-## manage.py
-##requirements.txt
-## README.md
+### Blog
+### Media/images
+### Members
+### Static
+### Telecom_union
+### Templates
+### db.sqlite3
+### manage.py
+### requirements.txt
+### README.md
 
 Bugs
 ====
