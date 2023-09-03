@@ -43,8 +43,8 @@ Installation
 * Open the project directory in an integrated terminal
 
 ![Opening an intergrated terminal](telecom_union\static\images\01.jpg)
-<!-- <img src='telecom_union\static\images\01.jpg' alt='intergrated terminal'>
- -->
+<img src='telecom_union\static\images\01.jpg' alt='intergrated terminal'>
+
 * Install the requirements using `pip install -r requirements.txt`
 
 ![Installing requirments](telecom_union\static\images\02.jpg)
@@ -78,7 +78,9 @@ File description
 
 Bugs
 ====
-No nugs at the moment.
+
+No Bugs at the moment.
+
 Authors
 =======
 Kouti Divine - [Github](https://github.com/divine016) / [Twitter](https://twitter.com/kouts_CQ)
@@ -86,6 +88,3 @@ Kouti Divine - [Github](https://github.com/divine016) / [Twitter](https://twitte
 Victor Olatunde - [Github](https://github.com/Re1gns) / [Twitter](https://twitter.com/Reigns)
 
 Kyrillos Maher - [Github]( https://github.com/cyril-777) / [LinledIn](https://www.linkedin.com/in/cyril-p/)
-
-
-python manage.py runserver
