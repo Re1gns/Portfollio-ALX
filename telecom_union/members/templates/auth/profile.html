@@ -11,7 +11,7 @@
 </head>
 <body>
     {% if user.is_authenticated %}
-    <h3>
+    <h3 style="margin-top: 90px; margin-bottom: 20px;">
       {{ profile }}'s profile page!
     </h3>
 
@@ -36,6 +36,7 @@
                   <h4>Resources</h4>
                   <p>Here you can find helpful resources.</p>
                   <ul>
+                    <p><h5>Need Representation?</h5></p>
                     <p><h5>Legal Assistance?</h5></p>
                     <p><h5>Protection at Work?</h5></p>
                     <p><h5>Need Some Other Help? <a href="{% url 'contact-us' %}">Contact Us</a> now.</h5></p>
@@ -141,6 +142,7 @@
       <h3> You're Not Logged In!</h3>
     </li>
     {% endif %}
+    <hr class="featurette-divider">
 </body>
 </html>
 {% endblock %}
