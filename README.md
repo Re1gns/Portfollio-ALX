@@ -90,6 +90,6 @@ Authors
 =======
 Kouti Divine - [Github](https://github.com/divine016) / [Twitter](https://twitter.com/kouts_CQ)
  
-Victor Olatunde - [Github](https://github.com/Re1gns) / [Twitter](https://twitter.com/Reigns)
+Victor Olatunde - [Github](https://github.com/Re1gns) / [Twitter](https://twitter.com/Re1gns_)
 
 Kyrillos Maher - [Github]( https://github.com/cyril-777) / [LinkedIn](https://www.linkedin.com/in/cyril-p/)
