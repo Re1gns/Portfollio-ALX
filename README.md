@@ -17,11 +17,11 @@ Functionalities
 Table of content
 ====================
 
-* `Environmenst`
-* `Installation`
-* `File description`
-* `Bugs`
-* `Authors`
+* [Environment](#Environment)
+* [Installation](#Installation)
+* `file description`
+* [Bugs](#Bugs)
+* [Authors](#Authors)
 
 Environment
 ==============
@@ -39,16 +39,16 @@ Environment
 Installation
 ============
 * Clone this repository git clone  https://github.com/Re1gns/Portfollio-ALX.git
-* Open the folder in your local machine 
-* Open the project directory in an integrated terminal
+* Open project using VScode
+* Open the project on VScode and click on open in integrated terminal
 
 <!-- ![Opening an intergrated terminal](telecom_union\static\images\01.jpg) -->
 <img src='telecom_union\static\images\01.jpg' alt='intergrated terminal'>
 
-* Install the requirements using `pip install -r requirements.txt`
+* In the terminal opened, type  `pip install -r requirements.txt` to install the requirments
 
 <img src='telecom_union\static\images\02.jpg' alt='Installing requirments'>
-* Run the server and open the local host link `http://127.0.0.1:8000/` in your browser
+* type `python manage.py runserver` to run the server and open the local host link `http://127.0.0.1:8000/` in your browser to view the project
 
 <img src='telecom_union\static\images\03.jpg' alt='running the project'>
 
