@@ -9,9 +9,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Profile</title>
 </head>
-<body>
+<body >
     {% if user.is_authenticated %}
-    <h3>
+    <h3 style="margin-top: 70px; font-size: 34px; padding: 15px;">
       {{ profile }}'s profile page!
     </h3>
 
@@ -19,8 +19,8 @@
         <div class="alert alert-success" role="alert">
           You're a beloved Member of Our Union!
         </div>
-        <a id="cancel_membership" href="{% url 'cancel_membership' %}" class="btn btn-outline-danger">Cancel Membership?</a>
-        <hr>
+        <a id="cancel_membership" href="{% url 'cancel_membership' %}" class="btn btn-outline-danger" style="margin-bottom: 50px;">Cancel Membership?</a>
+      
             <!-- Vertical Tabs Section -->
     <div class="row mt-4">
       <div class="col-md-3">
