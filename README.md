@@ -93,3 +93,14 @@ Kouti Divine - [Github](https://github.com/divine016) / [Twitter](https://twitte
 Victor Olatunde - [Github](https://github.com/Re1gns) / [Twitter](https://twitter.com/Re1gns_)
 
 Kyrillos Maher - [Github]( https://github.com/cyril-777) / [LinkedIn](https://www.linkedin.com/in/cyril-p/)
+
+Credits <3:
+=======
+* for images:
+pexels.com -
+thenounproject.com -
+transparentpng.com -
+freepik.com
+
+* for content:
+openAI - ChatGPT
