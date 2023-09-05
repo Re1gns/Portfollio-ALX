@@ -2,24 +2,29 @@
 
 # Portfollio-ALX
 
-Telecommunication Trade union website
+Telecommunication Trade Union website
 =====================================
 
-Trade unions are created either nationally or internaltionally to help workers in a certain fiield get help and also have a community.We noticed there are very few countries which have national telecom trade unions websites. So my team mates and i decide to build a telecommunication trade Union website. This would help graduates and even workers in the telecom filed connect, help and grow with each other.
+Trade unions are created either nationally or internationally to help workers in a certain field get help and also have a community. We noticed there are very few countries that have national telecom trade union websites. So my teammates and I decided to build a telecommunication trade Union website. This would help graduates and even workers in the telecom field connect, help, and grow with each other.
 
 Functionalities
 ===============
 
-* you can sign in and sign out
-* you can get acces to blog post
-* admin can post contents on the website
+* Users can sign up, sign in, and sign out.
+* Users and Visitors get access to website posts (news).
+* Admins can add new posts (news) on the website.
+* Signed-in Users can comment on posts (news).
+* Signed-in Users can contact the admins via a contact form.
+* Signed-in Users can fill up the Membership form and become members.
+* Members will have more resources than regular users on their profile pages.
+
 
 Table of content
 ====================
 
 * [Environment](#Environment)
 * [Installation](#Installation)
-* `file description`
+* [File Description](#File-Description)
 * [Bugs](#Bugs)
 * [Authors](#Authors)
 
@@ -52,7 +57,7 @@ Installation
 
 <img src='telecom_union\static\images\03.jpg' alt='running the project'>
 
-### Things to take into consderation
+### Things to take into consideration
 * Make sure you have python and pip installed in your machine
 #### To verify if you have python 
 * Open the command line and type `python --version`
@@ -63,7 +68,7 @@ Installation
 
     `Note:` Python versions from Python 2.7. 9+ and Python 3.4+ when installed comes with `pip`
 
-File description
+File Description
 ================
 ### Blog
 ### Media/images
@@ -85,6 +90,6 @@ Authors
 =======
 Kouti Divine - [Github](https://github.com/divine016) / [Twitter](https://twitter.com/kouts_CQ)
  
-Victor Olatunde - [Github](https://github.com/Re1gns) / [Twitter](https://twitter.com/Reigns)
+Victor Olatunde - [Github](https://github.com/Re1gns) / [Twitter](https://twitter.com/Re1gns_)
 
-Kyrillos Maher - [Github]( https://github.com/cyril-777) / [LinledIn](https://www.linkedin.com/in/cyril-p/)
+Kyrillos Maher - [Github]( https://github.com/cyril-777) / [LinkedIn](https://www.linkedin.com/in/cyril-p/)
